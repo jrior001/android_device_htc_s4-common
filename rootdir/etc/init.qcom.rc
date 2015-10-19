@@ -9,7 +9,7 @@ on early-init
 
 on init
     # Boringssl-compat
-    export LD_PRELOAD "/system/lib/libboringssl-compat.so"
+    export LD_PRELOAD "/system/lib/libhtc_symbols.so:/system/lib/libboringssl-compat.so"
 
     mkdir /devlog 0700 root root
 

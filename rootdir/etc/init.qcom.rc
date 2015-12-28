@@ -11,6 +11,8 @@ on init
     # Boringssl-compat
     export LD_PRELOAD "/system/lib/libhtc_symbols.so:/system/lib/libboringssl-compat.so"
 
+    export LD_SHIM_LIBS "/system/vendor/lib/libqc-opt.so|libshim_qcopt.so"
+
     mkdir /devlog 0700 root root
 
 on fs

@@ -68,6 +68,10 @@ PRODUCT_PACKAGES += \
 # Recovery
 COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
 
+# Shims
+PRODUCT_PACKAGES += \
+    libshim_qcopt
+
 # Thermal
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermald.conf:system/etc/thermald.conf
